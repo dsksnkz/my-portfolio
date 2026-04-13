@@ -83,6 +83,18 @@ li {
   transition: ease-in-out;
 }
 
+.prj1{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+}
+
+.linuxproject{
+  width: 500px; 
+  border: white groove 2px;
+  border-radius: 20px;
+}
 /* --- animations ---*/
 
 @keyframes entry{
