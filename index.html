@@ -1,57 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <!--- Head --->
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your Name | Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<!--- MAIN starts here--->
+    <!--- MAIN starts here--->
 
-<body>
+    <section id="home"></section>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="linux.html">Linux</a></li>
+                <li><a>Education</a></li>
+                <li><a href="#Projects">Projects</a></li>
+            </ul>
+        </nav>
 
-    <nav>
-        
-        <ul>
+        <main>
+            <!---Home-->
 
-        <li><a>Home</a></li>
-        <li><a>Linux</a></li>
-        <li><a>Education</a></li>
-        <li><a>Projects</a></li>
+            <div class="banner-cont">
+                <img src="pics/banner.png" alt="banner" class="banner" />
+            </div>
 
-        </ul>
+            <h1 class="title">Just a Portfolio.</h1>
+            <p class="p1">
+                A tech enthusiast, graphical designer, and a linux user. Trying
+                my best to learn more about <b>Rust, Linux, AI</b>, and other
+                projects. I starting playing with tech and computers during
+                covid, where staying at home is pretty much the only option.
+                Through my parent's laptop, I developed skills and logics that
+                is highly adaptive to computers.
 
-    </nav>
+                <br /><br />My current project working on is the Linux Kernel, a
+                Open-Source kernel or OS(operating system) that is highly
+                customizable to any like. You could create your own desktop, or
+                your Home server. Through your home server, you could create
+                your own storage, VPN, and other interesting features like
+                OpenClaw AI.
+            </p>
 
-<main>
+            <br />
+            <section id="Projects"></section>
+            <h2 class="projects">Projects</h2>
 
-<!---Home-->
-
-<div class="banner-cont">
-<img src = "pics/banner.png" alt="banner" class="banner">
-</div>    
-
-<h1 class="title">Just a Portfolio. </h1>
-<p class="p1">A tech enthusiast, computer scientist, graphical designer, design enginner,<b><i><u> or maybe just a hobby.</u></i></b>
-Trying my best to learn more about <b>Rust, Linux, AI</b>, and other projects. I starting playing with tech and computers during covid,
-where staying at home is pretty much the only option. Through my parent's laptop, I developed skills and logics that is highly 
-adaptive to computers.
-
-<br><br>My current project working on is the Linux Kernel, 
-a Open-Source kernel or OS(operating system) that is highly customizable to any like. You could create your own desktop, or your 
-Home server. Through your home server, you could create your own storage, VPN, and other interesting features like OpenClaw AI.</p>
-
-<br>
-<h2 class="projects">Projects</h2>
-
-<div class="prj1"> 
-<img src="pics/linuxproject.png" class="linuxproject">
-</div>
+            <div class="prj1">
+                <img class="linuxproject" src="pics/linuxproject.png" />
+                <p class="arch-project">Arch Linux</p>
+            </div>
+        </main>
+    </body>
+</html>

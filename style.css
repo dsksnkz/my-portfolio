@@ -1,109 +1,138 @@
 /* --- Global Container --- */
 html {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  scroll-behavior: smooth;
-  background: #27282e;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    scroll-behavior: smooth;
+    background: #1a1b25;
 }
 
 /* --- Main stuff heere--- */
 nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align: center;
+    margin-bottom: 20px;
+    position: fixed;
 }
 
 ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;             
-  margin: 0;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 li {
-  padding: 0 30px;        /* Equal spacing on both sides of each link */
-  color: white;
-  font-family: "JetBrains Mono", monospace;
-  animation-name: entry;
-  animation-duration: 0.7s;
-  transition: ease-in-out;
+    padding: 0 30px; /* Equal spacing on both sides of each link */
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    animation-name: entry;
+    animation-duration: 0.7s;
+    transition: ease-in-out;
+    text-decoration: none;
 }
 
 /* --- Centering the Banner --- */
 .banner-cont {
-  display: flex;
-  justify-content: center; 
-  width: 100%;
-  padding-top: 50px;       
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
 }
 
 .banner {
-  width: 740px;
-  height: 250px;
-  border-radius: 20px;
-  object-fit: cover;
-  display: block; 
-  animation-name: entry;
-  animation-duration: 1.2s;
-  transition: ease-in-out;
+    width: 740px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    animation-name: entry;
+    animation-duration: 1.2s;
+    transition: ease-in-out;
 }
 
-.title{
-  font-style: italic;
-  color: #fab387;
-  font-family: "JetBrains Mono", Courier, Monospace;
-  animation-name: entry;
-  animation-duration: 1.7s;
-  transition: ease-in-out;
-  font-size: 22px;
+.title {
+    font-style: italic;
+    color: #fea26a;
+    font-family: "JetBrains Mono", Courier, Monospace;
+    animation-name: entry;
+    animation-duration: 1.7s;
+    transition: ease-in-out;
+    font-size: 22px;
 }
 
-.p1{
-  color: white;
-  font-family: "JetBrains Mono";
-  animation-name: entry;
-  animation-duration: 2.2s;
-  transition: ease-in-out;
+.p1 {
+    color: #c0caf2;
+    font-family: "JetBrains Mono";
+    animation-name: entry;
+    animation-duration: 2.2s;
+    transition: ease-in-out;
 }
 
-.bigg{
-  font-size: 30px;
+.bigg {
+    font-size: 30px;
 }
 
-
-.projects{
-  font-size: 32px;
-  font-family: 'Courier New', Courier, monospace;
-  color: #7fa7e8;
-  border-left:#7fa7e8 solid 10px;
-  padding-left: 20px;
-  animation-name: entry;
-  animation-duration: 2.5s;
-  transition: ease-in-out;
+.projects {
+    font-size: 32px;
+    font-family: "JetBrains Mono";
+    font-style: italic;
+    color: #79a1f2;
+    border-left: #79a1f2 solid 10px;
+    padding-left: 20px;
+    animation-name: entry;
+    animation-duration: 2.5s;
+    transition: ease-in-out;
 }
 
-.prj1{
-  margin-top: 70px;
-  display: flex;
-  justify-content: center ;
-  align-items: center;
+.prj1 {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    # opacity: 0;
+    # transform: translateY(50px);
+    # transition:
+      #  opacity 0.6s ease-out,
+       # transform 0.6s ease-out;
 }
 
-.linuxproject{
-  width: 500px; 
-  border: white groove 2px;
-  border-radius: 20px;
+.prj1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.linuxproject {
+    width: 500px;
+    border: white groove 2px;
+    border-radius: 20px;
+}
+
+.reveal-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.arch-project{
+    color: #00bbdf;
+    font-family: "JetBrains Mono";
 }
 /* --- animations ---*/
 
-@keyframes entry{
-  0%{
-    opacity: 0%;
-    transform: translate(0px, 30px);
-  }
-  100%{
-    opacity: 100%;
-    transform: translate(0px, 0px);
-  }
+@keyframes entry {
+    0% {
+        opacity: 0%;
+        transform: translate(0px, 30px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translate(0px, 0px);
+    }
 }
